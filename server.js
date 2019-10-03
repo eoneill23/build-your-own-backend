@@ -31,5 +31,18 @@ app.get('/api/vi/teams', (request, response) => {
     })
     .catch((error) => {
       response.status(500).json({ error })
-    })
-})
+    });
+});
+
+app.get('/api/vi/teams/:id', (request, response) => {
+  const { id } = request.params;
+  database('teams')
+  .select()
+  .where({ id })
+  .then((team) => {
+    response.status(200).json(team)
+  })
+  .catch((error) => {
+    response.status(404).send('Could not find that team.')
+  })
+});
