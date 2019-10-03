@@ -213,7 +213,7 @@ const teamData = [
         name: 'Julio Jones',
         pos: 'wr',
         pointsScored: 78.80
-      }
+      },
       {
         name: 'Matt Ryan',
         pos: 'qb',
@@ -256,11 +256,10 @@ const teamData = [
       {
         name: 'Jacoby Brissett',
         pos: 'qb',
-        pointsScored:
-          76.14
+        pointsScored: 76.14
       }
     ]
   }
 ]
 
-export default teamData;
+module.exports = teamData;
