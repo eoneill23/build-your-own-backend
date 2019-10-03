@@ -75,10 +75,9 @@ app.post('/api/v1/teams', (request, response) => {
       .send({ error: `Expected format: { name: <string> head_coach: <string> city: <string> state: <string>  }. You're missing a "${requiredParameter}" property.` });
     }
   }
-  console.log(team)
+
   database('teams').insert(team, 'id')
   .then((team) => {
-    console.log(team)
       response.status(201).json({ id: team[0] })
     })
     .catch((error) => {
@@ -87,3 +86,27 @@ app.post('/api/v1/teams', (request, response) => {
     });
 });
 
+app.post('/api/v1/players', (request, response) => {
+  const player = request.body;
+  for (let requiredParameter of [
+    'name',
+    'pos',
+    'totalPoints',
+    'team_id'
+  ]) {
+    if (!player[requiredParameter]) {
+      return response
+        .status(422)
+        .send({ error: `Expected format: { name: <string> pos: <string> totalPoints: <string> team_id: <string>  }. You're missing a "${requiredParameter}" property.` });
+    }
+  }
+
+  database('players').insert(player, 'id')
+    .then((player) => {
+      response.status(201).json({ id: player[0] })
+    })
+    .catch((error) => {
+      console.log(error)
+      response.status(500).json({ error });
+    });
+});
