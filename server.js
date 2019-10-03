@@ -43,6 +43,19 @@ app.get('/api/vi/teams/:id', (request, response) => {
     response.status(200).json(team)
   })
   .catch((error) => {
-    response.status(404).send('Could not find that team.')
+    response.status(404).json('Could not find that team.')
   })
 });
+
+app.get('/api/vi/players/:id', (request, response) => {
+  const { id } = request.params;
+  database('players')
+  .select()
+  .where({ id })
+  .then((player) => {
+    response.status(200).json(player)
+  })
+  .catch((error) => {
+    response.status(404).json('Could not find that player.')
+  })
+})
