@@ -7,7 +7,7 @@ const teamData = [
     players: [
       {
         name: 'Christian McCaffrey',
-        pos: 'rb',
+        pos: 'RB',
         pointsScored: 111.90
       }
     ]
@@ -20,12 +20,12 @@ const teamData = [
     players: [
       {
         name: 'Lamar Jackson',
-        pos: 'qb',
+        pos: 'QB',
         pointsScored: 110.20
       },
       {
         name: 'Mark Ingram',
-        pos: 'rb',
+        pos: 'RB',
         pointsScored: 76.00
       }
     ]
@@ -38,17 +38,17 @@ const teamData = [
     players: [
       {
         name: 'Austin Ekeler',
-        pos: 'rb',
+        pos: 'RB',
         pointsScored: 107.00
       },
       {
         name: 'Keenan Allen',
-        pos: 'wr',
+        pos: 'WR',
         pointsScored: 97.50
       },
       {
         name: 'Philip Rivers',
-        pos: 'qb',
+        pos: 'QB',
         pointsScored: 74.86
       }
     ]
@@ -61,12 +61,12 @@ const teamData = [
     players: [
       {
         name: 'Patrick Mahomes',
-        pos: 'qb',
+        pos: 'QB',
         pointsScored: 104.80
       },
       {
         name: 'Sammy Watkins',
-        pos: 'wr',
+        pos: 'WR',
         pointsScored: 75.50
       }
     ]
@@ -79,7 +79,7 @@ const teamData = [
     players: [
       {
         name: 'Dalvin Cook',
-        pos: 'rb',
+        pos: 'RB',
         pointsScored: 97.40
       }
     ]
@@ -92,7 +92,7 @@ const teamData = [
     players: [
       {
         name: 'Russell Wilson',
-        pos: 'qb',
+        pos: 'QB',
         pointsScored: 96.44
       }
     ]
@@ -105,7 +105,7 @@ const teamData = [
     players: [
       {
         name: 'Dak Prescott',
-        pos: 'qb',
+        pos: 'QB',
         pointsScored: 91.22
       }
     ]
@@ -118,7 +118,7 @@ const teamData = [
     players: [
       {
         name: 'Cooper Kupp',
-        pos: 'wr',
+        pos: 'WR',
         pointsScored: 89.20
       }
     ]
@@ -131,17 +131,17 @@ const teamData = [
     players: [
       {
         name: 'Chris Godwin',
-        pos: 'wr',
+        pos: 'WR',
         pointsScored: 88.60
       },
       {
         name: 'Mike Evans',
-        pos: 'wr',
+        pos: 'WR',
         pointsScored: 78.80
       },
       {
         name: 'Jameis Winston',
-        pos: 'qb',
+        pos: 'QB',
         pointsScored: 75.08
       }
     ]
@@ -154,7 +154,7 @@ const teamData = [
     players: [
       {
         name: 'Nick Chubb',
-        pos: 'rb',
+        pos: 'RB',
         pointsScored: 87.70
       }
     ]
@@ -167,7 +167,7 @@ const teamData = [
     players: [
       {
         name: 'Carson Wentz',
-        pos: 'qb',
+        pos: 'QB',
         pointsScored: 83.92
       }
     ]
@@ -180,7 +180,7 @@ const teamData = [
     players: [
       {
         name: 'Deshaun Watson',
-        pos: 'qb',
+        pos: 'QB',
         pointsScored: 81.02
       }
     ]
@@ -193,12 +193,12 @@ const teamData = [
     players: [
       {
         name: 'Alvin Kamara',
-        pos: 'rb',
+        pos: 'RB',
         pointsScored: 79.90
       },
       {
         name: 'Michael Thomas',
-        pos: 'wr',
+        pos: 'WR',
         pointsScored: 76.10
       }
     ]
@@ -211,12 +211,12 @@ const teamData = [
     players: [
       {
         name: 'Julio Jones',
-        pos: 'wr',
+        pos: 'WR',
         pointsScored: 78.80
       },
       {
         name: 'Matt Ryan',
-        pos: 'qb',
+        pos: 'QB',
         pointsScored: 75.80
       }
     ]
@@ -229,7 +229,7 @@ const teamData = [
     players: [
       {
         name: 'Matthew Stafford',
-        pos: 'qb',
+        pos: 'QB',
         pointsScored: 78.28
       }
     ]
@@ -242,7 +242,7 @@ const teamData = [
     players: [
       {
         name: 'Marcus Mariota',
-        pos: 'qb',
+        pos: 'QB',
         pointsScored: 76.52
       }
     ]
@@ -255,7 +255,7 @@ const teamData = [
     players: [
       {
         name: 'Jacoby Brissett',
-        pos: 'qb',
+        pos: 'QB',
         pointsScored: 76.14
       }
     ]
