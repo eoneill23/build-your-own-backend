@@ -5,6 +5,7 @@ const configuration = require('./knexfile')[environment];
 const database = require('knex')(configuration);
 
 app.set('port', process.env.PORT || 3000);
+app.use(express.json());
 
 app.get('/', (request, response) => {
   response.send('Oh hey FF Tracker');
@@ -24,7 +25,7 @@ app.get('/api/v1/players', (request, response) => {
     });
 });
 
-app.get('/api/vi/teams', (request, response) => {
+app.get('/api/v1/teams', (request, response) => {
   database('teams').select()
     .then((teams) => {
       response.status(200).json(teams);
@@ -34,7 +35,7 @@ app.get('/api/vi/teams', (request, response) => {
     });
 });
 
-app.get('/api/vi/teams/:id', (request, response) => {
+app.get('/api/v1/teams/:id', (request, response) => {
   const { id } = request.params;
   database('teams')
   .select()
