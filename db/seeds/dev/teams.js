@@ -5,6 +5,7 @@ const createTeam = (knex, team) => {
     name: team.name,
     head_coach: team.headCoach,
     city: team.city,
+    state: team.state
   }, 'id')
     .then(teamId => {
       let playerPromises = [];
@@ -13,8 +14,8 @@ const createTeam = (knex, team) => {
         playerPromises.push(
           createPlayer(knex, {
             name: player.name,
-            pos: player.pos,
-            pointsScored: Math.floor(player.pointsScored),
+            pos: player.pos.toUpperCase(),
+            totalPoints: player.pointsScored.toString(),
             team_id: teamId[0]
           })
         )
