@@ -110,3 +110,19 @@ app.post('/api/v1/players', (request, response) => {
       response.status(500).json({ error });
     });
 });
+
+app.delete('/api/v1/players/:id', (req, res) => {
+  const { id } = req.params;
+  database('players')
+    .where({ id: id })
+    .del()
+    .then(() =>
+      database('players')
+        .where({ id })
+        .del()
+        .then(() => res.status(204).json('Successfully deleted player'))
+        .catch(error =>
+          res.status(500).json('Cannot remove player at this time')
+        )
+    );
+});
