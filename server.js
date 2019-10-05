@@ -81,7 +81,6 @@ app.post('/api/v1/teams', (request, response) => {
       response.status(201).json({ id: team[0] })
     })
     .catch((error) => {
-      console.log(error)
       response.status(500).json({ error });
     });
 });
@@ -106,7 +105,6 @@ app.post('/api/v1/players', (request, response) => {
       response.status(201).json({ id: player[0] })
     })
     .catch((error) => {
-      console.log(error)
       response.status(500).json({ error });
     });
 });
