@@ -27,10 +27,10 @@ A user can GET all teams and all players, POST a new team or new player,and dele
 ## Endpoints
 | Url | Verb  | Options  | Sample Response  |
 |---|---|---|---|
-| `/api/v1/players` | GET | An array of players: `[{"id": 1, "name": "Christian McCaffrey", "pos": "RB", "created_at": "2019-10-04T16:27:21.776Z", "updated_at": "2019-10-04T16:27:21.776Z",  "team_id": 1, "totalPoints": "111.9"},` | Not needed |
-| `/api/v1/teams` | GET | An array of teams: `[{"id": 1, "name": "Panthers", "head_coach": "Ron Rivera","city": "Charlotte", "created_at": "2019-10-04T16:27:21.693Z", "updated_at": "2019-10-04T16:27:21.693Z", "state": "NC"}, ...]` | Not needed |
-| `/api/v1/teams/:id` | GET | A specific team: `[{"id": 1, "name": "Panthers", "head_coach": "Ron Rivera","city": "Charlotte", "created_at": "2019-10-04T16:27:21.693Z", "updated_at": "2019-10-04T16:27:21.693Z", "state": "NC"}]` | Not needed |
-| `/api/v1/players/:id`  | GET | A specific player: `[{"id": 1, "name": "Christian McCaffrey", "pos": "RB", "created_at": "2019-10-04T16:27:21.776Z", "updated_at": "2019-10-04T16:27:21.776Z",  "team_id": 1, "totalPoints": "111.9"}]` | Not needed |
+| `/api/v1/players` | GET | Not needed | An array of players: `[{"id": 1, "name": "Christian McCaffrey", "pos": "RB", "created_at": "2019-10-04T16:27:21.776Z", "updated_at": "2019-10-04T16:27:21.776Z",  "team_id": 1, "totalPoints": "111.9"},` |
+| `/api/v1/teams` | GET | Not needed | An array of teams: `[{"id": 1, "name": "Panthers", "head_coach": "Ron Rivera","city": "Charlotte", "created_at": "2019-10-04T16:27:21.693Z", "updated_at": "2019-10-04T16:27:21.693Z", "state": "NC"}, ...]` |
+| `/api/v1/teams/:id` | GET | Not needed | A specific team: `[{"id": 1, "name": "Panthers", "head_coach": "Ron Rivera","city": "Charlotte", "created_at": "2019-10-04T16:27:21.693Z", "updated_at": "2019-10-04T16:27:21.693Z", "state": "NC"}]` |
+| `/api/v1/players/:id`  | GET | Not needed | A specific player: `[{"id": 1, "name": "Christian McCaffrey", "pos": "RB", "created_at": "2019-10-04T16:27:21.776Z", "updated_at": "2019-10-04T16:27:21.776Z",  "team_id": 1, "totalPoints": "111.9"}]` |
 | `/api/v1/teams` | POST | {"name": `string`, "head_coach": `string`, "city": `string`,"state": `string`} | The id of the created team: `{"id": 1}` |
 | `/api/v1/players` | POST | {"name": `string`, "pos": `string`, "totalPoints": `string`, "team_id": `integer`} | The id of the created player: `{"id": 26}`  |
 | `/api/v1/players/:id` | DELETE | Not needed | A deleted player: `Successfully deleted player!` |
