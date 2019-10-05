@@ -1,9 +1,9 @@
 # Build your own backend
 ## Authors
-Eric O'Neill
+Eric O'Neill ([eoneill23](https://github.com/eoneill23))
 
 ## Overview
-Build your own backend is a fantasy football RESTful API that contains information on the top-25 scorers in fantasy football through the first four weeks of the 2019 season. I scraped `fantasy.nfl.com/research/scoring` leaders using Cheerio.
+Build your own backend is a fantasy football RESTful API that contains information on the top-25 scorers in fantasy football through the first four weeks of the 2019 season. I scraped `fantasy.nfl.com/research/scoring` leaders using [Cheerio](https://cheerio.js.org/).
 
 It also contains a PostgreSQL database with a one-to-many relationship with players and the teams that they play for.
 
