@@ -9,6 +9,9 @@ It also contains a PostgreSQL database with a one-to-many relationship with play
 
 A user can GET all teams and all players, POST a new team or new player,and delete a player.
 
+## Storyboard
+https://github.com/eoneill23/build-your-own-backend/projects/2
+
 ## Learning goals
 * Get comfortable building databases with Express, Knex, and PostgreSQL.
 * Building a RESTful API for a dataset of my choosing.
